@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            box-sizing: border-box;
+        }
+        .rating-options {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bước 2: Thêm tiêu đề và văn bản -->
+    <h1>Welcome to My Personal Webpage</h1>
+    
+    <h2>About Me</h2>
+    <p>Hello! My name is Alex. I'm a web development enthusiast currently learning HTML and CSS. I enjoy creating websites and exploring new technologies.</p>
+    
+    <!-- Bước 3: Tạo danh sách -->
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Hiking</li>
+        <li>Photography</li>
+    </ul>
+    
+    <h2>My Goals</h2>
+    <ol>
+        <li>Master HTML and CSS</li>
+        <li>Learn JavaScript</li>
+        <li>Build a personal portfolio website</li>
+        <li>Contribute to open source projects</li>
+    </ol>
+    
+    <!-- Bước 4: Thêm form phản hồi -->
+    <h2>Feedback Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <div class="rating-options">
+            <p>How would you rate this website?</p>
+            <label>
+                <input type="radio" name="rating" value="excellent" required> Excellent
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="good"> Good
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="average"> Average
+            </label>
+        </div>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>

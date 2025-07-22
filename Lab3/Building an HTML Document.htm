@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Space and Universe Exploration">
+    <meta name="keywords" content="space, universe, astronomy, NASA">
+    <meta name="author" content="Your Name">
+    <title>Space Exploration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0a0a1a;
+            color: #ffffff;
+        }
+        h1, h2, h3 {
+            color: #4fc3f7;
+        }
+        .media-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            border: 2px solid #4fc3f7;
+            border-radius: 8px;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #4fc3f7;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #4fc3f7;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #1a237e;
+        }
+        form {
+            background-color: #1a1a2e;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: none;
+        }
+        button {
+            background-color: #4fc3f7;
+            color: #0a0a1a;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Space and Universe Exploration</h1>
+    <p>Discover the wonders of our universe through these amazing visuals.</p>
+    
+    <h2>Stunning Space Images</h2>
+    <div class="media-container">
+        <img src="https://images-assets.nasa.gov/image/PIA23122/PIA23122~orig.jpg" 
+             alt="Hubble Space Telescope image of galaxy" 
+             width="800">
+        <p>Hubble Space Telescope image of distant galaxy (Credit: NASA)</p>
+    </div>
+    
+    <h2>Space Exploration Video</h2>
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/libKVRa01L8?autoplay=0" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+        <p>NASA: 10 Years of the International Space Station (Credit: NASA YouTube)</p>
+    </div>
+    
+    <h2>Space Facts</h2>
+    <table>
+        <tr>
+            <th>Celestial Body</th>
+            <th>Interesting Fact</th>
+        </tr>
+        <tr>
+            <td>Jupiter</td>
+            <td>Has 79 known moons</td>
+        </tr>
+        <tr>
+            <td>Milky Way</td>
+            <td>Contains 100-400 billion stars</td>
+        </tr>
+    </table>
+    
+    <h2>Space Newsletter</h2>
+    <form>
+        <p>
+            <label>Your Name: 
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </label>
+        </p>
+        <p>
+            <label>Email: 
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </label>
+        </p>
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+</html>

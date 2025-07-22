@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" >
+	<meta name="description" content="Web development" >
+	<meta name="keywords" content="HTML (Part 1 - Content - Form)" >
+	<meta name="author" content="put your name here" >
+	<title>Web Development Survey</title>
+</head>
+<body>
+	<!--Survey content-->
+	<h1>Survey Questions - Part 1</h1>
+	
+	<form id="survey" method="post" action="http://mercury.swin.edu.au/21080038/surveytest.php">
+		<fieldset>
+			<legend>Browsers and Tools</legend>
+			
+			<p>Which browser do you know how to use? (Check all that apply)</p>
+			<p>
+				<label><input type="checkbox" name="browser[]" value="Chrome" > Chrome</label><br>
+				<label><input type="checkbox" name="browser[]" value="Firefox" > Firefox</label><br>
+				<label><input type="checkbox" name="browser[]" value="IE" > Internet Explore</label><br>
+				<label><input type="checkbox" name="browser[]" value="Safari" > Safari</label></p>
+				
+			<p>Which text editor do you know how to use? (Check all that apply)</p>
+			<p>
+				<label><input type="checkbox" name="editor[]" value="Komodo" > Komodo</label><br >
+				<label><input type="checkbox" name="editor[]" value="Notepad++" > Notepad++</label><br >
+				<label><input type="checkbox" name="editor[]" value="Sublime" > Sublime Text</label><br >
+				<label><input type="checkbox" name="editor[]" value="Wrangler" > Wrangler</label>
+			</p>
+		</fieldset>
+		
+		<p>
+		<a href="survey02.htm">Previous Page</a>
+		<input type="submit" value="Submit" >
+		<input type="reset" value="Reset" >
+		<a href="survey04.htm">Next Page</a>
+		</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		<h1> Tôi mới học lập trình</h1>
+	</head>
+	<body>
+	<p> body element contains all displayable content of the webpage</p>
+</html>
