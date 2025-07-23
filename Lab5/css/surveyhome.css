@@ -1,0 +1,122 @@
+/* ==================================== */
+/* BƯỚC 5: CSS Positioning              */
+/* Định vị các phần tử chính của trang */
+/* ==================================== */
+
+#main-content {
+    float: left;
+    width: 65%;
+}
+
+#ads-sidebar {
+    float: right;
+    width: 30%;
+    font-size: 8px;
+    font-style: italic;
+    color: green;
+}
+
+#footer {
+    clear: both;
+}
+
+
+/* ========================================= */
+/* BƯỚC 6: CSS Web Typography and Coloring  */
+/* Kiểu chữ và màu sắc cho các phần tử      */
+/* ========================================= */
+
+#header {
+    color: white;
+    background-color: navy;
+    padding: 15px;
+    text-align: center;
+}
+
+#main-nav {
+    background-color: darkgrey;
+}
+
+.article {
+    color: black;
+    background-color: lightgrey;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng tổng thể */
+}
+
+.ad-item {
+    color: black;
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng tổng thể */
+}
+
+#footer {
+    color: white;
+    background-color: navy; /* Thêm lại nếu chưa có, đảm bảo màu nền cho footer */
+    text-align: center;
+    padding: 20px;
+}
+
+/* ========================================= */
+/* BƯỚC 7: More CSS                          */
+/* Định kiểu chi tiết cho Menu và Article   */
+/* ========================================= */
+
+/* 7.1 Cho phần tử <ul> trong <nav> (id="main-nav") */
+#main-nav ul {
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* 7.2 Cho tất cả các phần tử <a> trong <nav> */
+#main-nav li a {
+    float: left;
+    width: 6em;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+    text-align: center;
+    display: block;
+    line-height: 1.5;
+}
+
+/* 7.3 Cho tất cả các phần tử <a> trong <nav> khi di chuột qua */
+#main-nav li a:hover {
+    background-color: brown;
+}
+
+/* 7.4 Cho tất cả các phần tử <article> */
+.article {
+    width: 95%; /* Điều chỉnh lại width cho phù hợp với main content */
+    min-height: 150px;
+    box-shadow: 3px 3px 3px 2px #797979;
+}
+
+/* 7.5 Cho tất cả các phần tử tiêu đề trong <article> (ví dụ: h2) */
+.article h2 {
+    text-shadow: #aaa 2px 2px 2px;
+}
+
+/* ========================================= */
+/* TASK 2: CSS Positioning Properties and Values */
+/* Định vị quảng cáo cố định ở góc dưới bên trái */
+/* ========================================= */
+
+#div-ads { /* Selector cho thẻ có id="div-ads" */
+    position: fixed; /* Giữ phần tử cố định so với cửa sổ trình duyệt */
+    bottom: 0;       /* Đặt phần tử ở dưới cùng của cửa sổ trình duyệt */
+    left: 0;         /* Đặt phần tử ở bên trái cùng của cửa sổ trình duyệt */
+    width: 200px;    /* Đặt chiều rộng cho div quảng cáo (có thể điều chỉnh) */
+    padding: 15px;   /* Thêm padding để nội dung không bị dính sát lề */
+    background-color: rgba(255, 255, 0, 0.8); /* Màu nền vàng nhạt có độ trong suốt */
+    border: 1px solid #ccc; /* Thêm đường viền */
+    z-index: 1000;   /* Đảm bảo div này luôn nằm trên các phần tử khác */
+}
