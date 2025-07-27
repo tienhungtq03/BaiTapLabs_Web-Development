@@ -1,0 +1,46 @@
+/* style.css */
+
+/* Quy tắc mặc định, áp dụng cho desktop và các màn hình lớn hơn 480px */
+body {
+    color: red; /* Màu đỏ cho desktop, từ desktop.css [cite: 67] */
+}
+
+/* Quy tắc cho màn hình rất rộng (trên 1024px) */
+@media screen and (min-width: 1024px) { 
+    body { [cite: 102]
+        font-size: 100%; [cite: 103]
+        /* Bạn có thể reset lại màu ở đây nếu không muốn màu đỏ trên màn hình rất lớn */
+        /* Ví dụ: color: initial; */
+    } 
+} 
+
+/* Quy tắc cho màn hình hẹp (dưới hoặc bằng 480px), tổng hợp từ mobile.css */
+@media screen and (max-width: 480px) { 
+    body {
+        font-size: 200%; /* Tăng kích thước phông chữ trong biểu mẫu lên 200% */
+        color: initial; /* Đặt lại màu chữ về mặc định cho mobile  */
+    }
+    h1 {
+        text-align: center; /* Căn giữa văn bản cho tất cả các phần tử <h1> [cite: 82] */
+    }
+    h2 {
+        font-size: 40px; /* Thay đổi kích thước phông chữ của <h2> thành 40 pixel [cite: 83] */
+        margin-bottom: 0; /* Xóa lề dưới của <h2> [cite: 84] */
+    }
+    input {
+        width: 100%; /* Làm cho tất cả các phần tử <input> chiếm toàn bộ chiều rộng [cite: 88] */
+        box-sizing: border-box; /* Đảm bảo padding và border không làm tăng thêm chiều rộng */
+    }
+    p {
+        margin: 0; /* Xóa tất cả các lề xung quanh tất cả các phần tử <p> [cite: 89] */
+    }
+    input[type="radio"] {
+        width: 15%; /* Đặt chiều rộng của tất cả các nút radio thành 15% [cite: 91] */
+    }
+    input[type="submit"], button { /* Đặt chiều rộng của tất cả các nút thành 40% [cite: 93] */
+        width: 40%;
+    }
+    .button-container { /* Căn giữa nút kiểm tra bằng cách căn giữa <div> thích hợp [cite: 95] */
+        text-align: center;
+    }
+} 

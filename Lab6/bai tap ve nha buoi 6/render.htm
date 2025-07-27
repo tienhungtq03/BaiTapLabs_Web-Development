@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="keywords" content="Editor.md,editor,Markdown Editor,Markdown" />
+    <meta name="description" content="Skills Network Author IDE" />
+    <title>Skills Network Editor</title>
+    <link rel="stylesheet" href="/editormd/examples/css/style.css?version=3.8.2" />
+    <link rel="stylesheet" href="/editormd/css/editormd.css?version=3.8.2" />
+    <link rel="stylesheet" href="/public/css/custom.css?version=3.8.2" />
+    <link rel="stylesheet" href="/public/css/custom_popover.css?version=3.8.2" />
+    <link rel="shortcut icon" href="/public/images/SN_favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css?version=3.8.2">
+    <script src="/public/js/comms.js?version=3.8.2"></script>
+    <script defer src="/node_modules/alpinejs/dist/cdn.min.js?version=3.8.2"></script>
+</head>
+
+<body>
+    <div id="layout">
+    <div id="test-editormd">
+        <textarea style="display:none;">::page{title&#x3D;&quot;Hands-on Lab: Optimizing a Website for Search Ranking&quot;}
+
+&lt;img src&#x3D;&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/IDSN-logo.png&quot; width&#x3D;&quot;200&quot; alt&#x3D;&quot;cognitiveclass.ai logo&quot;&gt; &lt;br&gt;
+
+**Estimated time needed:** 45 minutes
+
+In this lab, you will learn how to add elements to your HTML page to optimize it for search engines.
+
+The lab starts with a sample application, which is a fresh fruit marketplace on our ecommerce website.
+
+You will then be guided through six simple steps to implement those changes.
+
+## Objectives:
+
+After completing this lab, you will be able to:
+* Create metadata that optimizes your web page for search engines
+* Create HTML elements in a way that is readable to search engines
+
+::page{title&#x3D;&quot;Set-up : Create application&quot;}
+
+1. Open a terminal window by using the menu in the editor: **Terminal &gt; New Terminal**.
+
+![Terminal window shows terminal menu with New Terminal highlighted ](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/new_terminal.png &quot;new terminal&quot;)
+
+2. If you are not currently in the project folder, copy and paste the following code to change to your project folder.
+
+&#x60;&#x60;&#x60;bash
+cd /home/project
+&#x60;&#x60;&#x60;
+
+3. Run the following command to clone the Git repository that contains the starter code needed for this lab if the Git repository doesn\&#x27;t already exist.
+
+&#x60;&#x60;&#x60;bash
+[ ! -d &#x27;optimizing-for-search-ranking&#x27; ] &amp;&amp; git clone https://github.com/ibm-developer-skills-network/zchbp-optimizing-for-search-ranking.git
+&#x60;&#x60;&#x60;
+
+4. Change to the directory **zchbp-optimizing-for-search-ranking** to start working on the lab.
+
+&#x60;&#x60;&#x60;bash
+cd zchbp-optimizing-for-search-ranking
+&#x60;&#x60;&#x60;
+
+5. List the contents of this directory to see the artifacts for this lab.
+
+&#x60;&#x60;&#x60;bash
+ls
+&#x60;&#x60;&#x60;
+
+6. Run the following command on the terminal to host your web page.
+
+&#x60;&#x60;&#x60;bash
+python3 -m http.server
+&#x60;&#x60;&#x60;
+
+7. To test your application in your browser, run the application first.
+
+::startApplication{port&#x3D;&quot;8000&quot; display&#x3D;&quot;internal&quot; name&#x3D;&quot;Launch Application&quot; route&#x3D;&quot;/index.html&quot;}
+
+8. It will look like this:
+
+![Fruit Marketplace seo unoptimized, includes pictures of fruit](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/fruit-marketplace-start.png)
+
+9. You can copy the URL and paste it into your browser to see the developer view of your web page. This is what search engines see.
+
+&#x60;⌘ Cmd + ⌥ Option + U&#x60; on Mac or &#x60;CTRL + U&#x60; on Windows.
+
+::page{title&#x3D;&quot;Working with files in Cloud IDE&quot;}
+
+If you are new to Cloud IDE, this section will show you how to create and edit files, which are part of your projet, in Cloud IDE.
+
+To view your files and directories inside Cloud IDE, click on this files icon to reveal it.
+
+![Files icon highlighted to reveal project directory](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/empty-project-directory-icon-selected.png &quot;Files icon highlighted to reveal project directory&quot;)
+
+If you have cloned (using &#x60;git clone&#x60; command) boilerplate/starting code, then it will look like below:
+
+![Project directory showing boilerplate code](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/boilerplate-code.png &quot;Project directory showing boilerplate code&quot;)
+
+Otherwise a blank project looks like this:
+
+![Empty project directory](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/empty-project-directory.png &quot;Empty project directory&quot;)
+
+## Create a new file
+
+You can right-click and select the New File option to create a file in your project.
+
+![Create new file menu](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/create-new-file-menu.png &quot;Create new file menu&quot;)
+
+You can also choose &#x60;File -&gt; New File&#x60; to do the same.
+
+It will then prompt you to enter name of this new file. In the example below, we are creating &#x60;sample.html&#x60;.
+
+![New file name](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/new-file-name.png &quot;New file name&quot;)
+
+Clicking on the file name &#x60;sample.html&#x60; in the directory structure will open the file on the right pane. You can create all different types of files; for example &#x60;FILE_NAME.js&#x60; for JavaScript file.
+
+![Viewing sample file](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/viewing-sample-file.png &quot;Viewing sample file&quot;)
+
+In the example, we just pasted some basic html code and then saved the file.
+
+![Editing sample file](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/editing-sample-file.png &quot;Editing sample file&quot;)
+
+And saving it by:
+- Going in the menu.
+- Press &#x60;⌘ Cmd + S&#x60; on Mac or &#x60;CTRL + S&#x60; on Windows.
+- Or it can Autosave it for you too.
+
+![Save file menu](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/save-file.png &quot;Save file menu&quot;)
+
+::page{title&#x3D;&quot;Exercise 1: Add the title in the head section&quot;}
+
+### Add title in the head section
+
+If you inspect &#x60;index.html&#x60;, you will notice that the head section of the HTML page is currently empty.
+
+&#x60;&#x60;&#x60;html
+&lt;head&gt; &lt;/head&gt;
+&#x60;&#x60;&#x60;
+
+The title tag in the head section of an HTML document provides a brief and descriptive title for the web page. It is displayed in the browser tab and is used by search engines as a snippet of information about the page\&#x27;s content. The title tag is important for several reasons:
+
+1. Search Engine Optimization (SEO): The title tag helps search engines understand the content and context of a page. It is a key factor in determining the page\&#x27;s relevance and ranking in search engine results.
+2. User experience: A descriptive and relevant title tag can help users understand what the page is about and persuade them to click through to the page from search engine results.
+3. Bookmarking: When a user bookmarks a page, the title tag is also used as the default name, so a descriptive title makes it easier for users to find and identify the page later.
+
+Change the title to:
+
+&#x60;&#x60;&#x60;html
+&lt;head&gt;
+  &lt;title&gt;Fresh Fruit Marketplace&lt;/title&gt;
+&lt;/head&gt;
+&#x60;&#x60;&#x60;
+
+Refresh the browser to see the title change. Also, refresh the source to see the HTML change.
+
+::page{title&#x3D;&quot;Exercise 2: Use the h1 tag for page heading&quot;}
+
+The H1 tag, also known as the &quot;headline 1&quot; tag, is used to define a web page\&#x27;s primary heading or title. The H1 tag is important for several reasons:
+
+1. SEO: Search engines use the H1 tag to understand the structure and hierarchy of content on a page. It is often used as a factor in determining a page\&#x27;s relevance and ranking in search engine results.
+
+2. User experience: A clear and descriptive H1 tag helps users understand the main topic or purpose of a page, making navigation and interaction with the content easier.
+
+3. Accessibility: Screen readers and other assistive technologies rely on HTML headings to understand the structure and organization of a page, and the H1 tag serves as the main heading for this purpose.
+
+Instead of
+
+&#x60;&#x60;&#x60;html
+&lt;p class&#x3D;&quot;text-center&quot;&gt;Fruit Marketplace&lt;/p&gt;
+&#x60;&#x60;&#x60;
+
+Use
+
+&#x60;&#x60;&#x60;html
+&lt;h1 class&#x3D;&quot;text-center&quot;&gt;Fruit Marketplace&lt;/h1&gt;
+&#x60;&#x60;&#x60;
+
+Refresh the source to see the change.
+
+::page{title&#x3D;&quot;Exercise 3: Define meta tag&quot;}
+
+Meta tags in HTML provide metadata about the web page, including information such as keywords for search engines, description of the page, character encoding, and other information for web browsers or search engines. The metadata in the meta tags helps search engines understand the content on the webpage and helps improve the website\&#x27;s visibility in search results.
+
+Add the following in the &#x60;head&#x60; section:
+
+&#x60;&#x60;&#x60;html
+&lt;meta
+  name&#x3D;&quot;description&quot;
+  content&#x3D;&quot;Find the freshest and highest quality fruits from local and global sources at our fruit marketplace. Shop for a variety of seasonal and exotic fruits today!&quot;
+/&gt;
+&#x60;&#x60;&#x60;
+
+This change is not visible on the display page, but it can be seen in the source. Refresh the source to see the change.
+
+::page{title&#x3D;&quot;Exercise 4: Define alt tags for images&quot;}
+
+The alt tag provides alternative text for an image on a web page, in case the image cannot be displayed for any reason, such as slow internet connection, an error in the image file URL, or a user browsing the web with a screen reader.
+
+Alternative text for images is important for accessibility because it allows users who are visually impaired or have difficulty loading images to understand what the image represents. It also provides a textual description of the image to search engines, which can help with SEO and accessibility.
+
+Make the changes in the image of the banana to add an &#x60;alt&#x60; section
+
+&#x60;&#x60;&#x60;html
+&lt;img src&#x3D;&quot;images/banana.jpg&quot; /&gt;
+&#x60;&#x60;&#x60;
+
+Becomes
+
+&#x60;&#x60;&#x60;html
+&lt;img
+  src&#x3D;&quot;images/banana.jpg&quot;
+  alt&#x3D;&quot;A bunch of ripe yellow bananas on a white background.&quot;
+/&gt;
+&#x60;&#x60;&#x60;
+
+This change is not visible on the display page, but it can be seen in the source. Refresh the source to see the change.
+
+::page{title&#x3D;&quot;Exercise 5: Use the H2 tag for product titles&quot;}
+
+In HTML, the &#x60;h2&#x60; tags are used to indicate a second-level heading within the content of a web page. They provide a way to structure the content and help create an outline for the page, making it easier for both users and search engines to understand the content and navigate the page. Using headings also improves accessibility for users who use assistive technologies such as screen readers.
+
+&#x60;&#x60;&#x60;html
+&lt;h5 class&#x3D;&quot;text-white&quot;&gt;
+  &lt;a class&#x3D;&quot;product-link&quot; href&#x3D;&quot;#&quot;&gt;Bananas&lt;/a&gt;
+&lt;/h5&gt;
+&#x60;&#x60;&#x60;
+
+Becomes
+
+&#x60;&#x60;&#x60;html
+&lt;h2 class&#x3D;&quot;text-white&quot;&gt;
+  &lt;a class&#x3D;&quot;product-link&quot; href&#x3D;&quot;#&quot;&gt;Bananas&lt;/a&gt;
+&lt;/h2&gt;
+&#x60;&#x60;&#x60;
+
+Refresh the page to see the display change.
+
+::page{title&#x3D;&quot;Exercise 6: Correctly define breadcrumbs&quot;}
+
+Breadcrumbs in HTML provide a visual way to show the user where the page is located in a website\&#x27;s hierarchy. This helps users understand their location in relation to the rest of the site and provides an easy way to navigate back to higher-level pages. Breadcrumbs also help search engines understand the context of a page and its relationship with other pages on the website, which can help with SEO. By using breadcrumbs, users can quickly navigate back to the previous section, making the website easier to use and improving the user experience.
+
+Google and other search engines expect the breadcrumbs to be part of your HTML body. It should be defined as follows, but note here that classes &#x60;breadcrumb&#x60; and &#x60;breadcrumb-item&#x60; are for decorative purposes only.
+
+Replace
+
+&#x60;&#x60;&#x60;html
+&lt;p&gt;Fruits and Vegetables &gt; Fresh &gt; Fruits&lt;/p&gt;
+&#x60;&#x60;&#x60;
+
+With
+
+&#x60;&#x60;&#x60;html
+&lt;ol class&#x3D;&quot;breadcrumb&quot;&gt;
+  &lt;li class&#x3D;&quot;breadcrumb-item&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot;&gt;Fruits and Vegetables&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;breadcrumb-item&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot;&gt;Fresh&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;breadcrumb-item active&quot;&gt;Fruits&lt;/li&gt;
+&lt;/ol&gt;
+&#x60;&#x60;&#x60;
+Refresh the page to see the display change.
+
+::page{title&#x3D;&quot;Exercise 7: Add on-screen description to improve on SEO&quot;}
+
+To further improve on SEO, you should now add a &#x60;p&#x60; tag that includes following text, just below our &#x60;h1&#x60;.
+
+&gt; Our online fruit marketplace is a platform that offers a convenient way for people to purchase fresh fruits from different regions and varieties without leaving their homes. Our marketplace has a wide range of fruits available, from popular ones such as apples and bananas to exotic ones such as dragon fruit and rambutan. We ensure the quality and freshness of the fruits by sourcing directly from reliable suppliers. With the growing popularity of online shopping, online fruit marketplaces are becoming a preferred choice for consumers who value convenience and quality.
+
+&lt;details&gt;
+&lt;summary&gt;Hint&lt;/summary&gt;
+
+&#x60;&#x60;&#x60;html
+&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;p class&#x3D;&quot;text-center&quot;&gt;Our online fruit marketplace is a platform that offers a convenient way for people to purchase fresh fruits from different regions and varieties without leaving their homes. Our marketplace has a wide range of fruits available, from popular ones such as apples and bananas to exotic ones such as dragon fruit and rambutan. We ensure the quality and freshness of the fruits by sourcing directly from reliable suppliers. With the growing popularity of online shopping, online fruit marketplaces are becoming a preferred choice for consumers who value convenience and quality.&lt;/p&gt;
+&lt;/div&gt;
+&#x60;&#x60;&#x60;
+&lt;/details&gt;
+
+Refresh the page to see the display change.
+
+### Congratulations! You have completed the lab for Optimizing a Website for Search Ranking.
+
+![Fruit Marketplace page in finish result with fruit pictures](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork/images/fruit-marketplace-finish.png &quot;fruit marketplace finish result&quot;)
+
+## Summary:
+
+In this lab, you added title, meta, and heading tags to your HTML page to improve accessibility and SEO readability.
+
+## Author(s)
+
+&lt;h4&gt; Muhammad Yahya &lt;h4/&gt;
+
+&lt;!--
+## Changelog
+
+| Date       | Version | Changed by     | Change Description      |
+| ---------- | ------- | -------------- | ----------------------- |
+| 2023-03-29 | 0.3     | Steve Hord     | Replaced SN logo        |
+| 2023-03-23 | 0.2     | Steve Hord     | QA pass with edits      |
+| 2023-02-07 | 0.1     | Muhammad Yahya | Initial version created |
+--&gt;
+## &lt;h3 align&#x3D;&quot;center&quot;&gt; (C) IBM Corporation. All rights reserved. &lt;h3/&gt;
+
+</textarea>
+    </div>
+</div>
+
+<script src="/node_modules/@popperjs/core/dist/umd/popper.min.js?version=3.8.2"></script>
+<script src="/node_modules/tippy.js/dist/tippy-bundle.umd.min.js?version=3.8.2"></script>
+
+<script src="/node_modules/he/he.js?version=3.8.2"></script>
+<script type="text/javascript" src="/node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js?version=3.8.2"></script>
+ 
+<script src="/node_modules/plyr/dist/plyr.polyfilled.js?version=3.8.2"></script>
+<link rel="stylesheet" href="/node_modules/plyr/dist/plyr.css?version=3.8.2" />
+<link rel="stylesheet" href="public/css/custom_plyr.css?version=3.8.2" />
+
+<script src="editormd/examples/js/jquery.min.js"></script>
+<script src="editormd/editormd.js?version=3.8.2"></script>
+
+<script src="editormd/languages/en.js"></script>
+
+<script src="public/js/common.js?version=3.8.2"></script>
+<script src="public/js/render.js?version=3.8.2"></script>
+
+<script type="text/javascript">
+    var authorEditor = $(function () {
+        let metadata = he.decode('{&quot;markdown-version&quot;:&quot;v1&quot;,&quot;tool-type&quot;:&quot;theia&quot;,&quot;branch&quot;:&quot;lab-4543-instruction&quot;,&quot;version-history-start-date&quot;:&quot;2023-02-03T15:45:37Z&quot;,&quot;locales-url&quot;:&quot;https://cf-courses-data.static.labs.skills.network/YKLjcsrNQdsc03H8S_KmVw/Optimizing%20a%20Website%20for%20Search%20Ranking-v1-locales.json&quot;}')
+        injectMetadata(metadata)
+
+        let token = findGetParameter("token");
+
+        let LABS_BASE_URL = 'https://labs.cognitiveclass.ai';
+        let asset_library_prefix_url = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-WD0231EN-SkillsNetwork';
+        let tool_type = "theia";
+        let filename = `labs/lab.md`;
+        let audioFileUrl = ``
+        let localesUrl = `https://cf-courses-data.static.labs.skills.network/YKLjcsrNQdsc03H8S_KmVw/Optimizing%20a%20Website%20for%20Search%20Ranking-v1-locales.json`;
+        let launch_presentation_locale = ``;
+        let currentTheme = localStorage.getItem("theme") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "default");
+
+        return authorEditor = editormd("test-editormd", "3.8.2", {
+            tool_type,
+            filename,
+            audioFileUrl,
+            localesUrl,
+            width: "100%",
+            //height: "100%",
+            autoHeight: true,
+            // mode: 'markdown',
+            theme: currentTheme,
+            previewTheme: currentTheme,
+            editorTheme: currentTheme === "dark" ? "pastel-on-dark" : "default",
+            readOnly: true,
+            pluginPath: 'plugins/',
+            syncScrolling: false,
+            htmlDecode: 'img',
+            path: 'editormd/lib/',
+            watch: false,
+            // markdown,
+            toolbar: false,
+            atLink: false,
+            toc: true,
+            tocm: true,
+            tocDropdown: false,
+            tocTitle: "Table of Contents For your lab!",
+            tex: true,
+            flowChart: true,
+            sequenceDiagram: true,
+            codeFold: true, // Doesn't do anything?
+            taskList: true,
+            emoji: true,
+            saveMarkdownToTextarea: true,
+
+            onresize: function () {
+                $("html,body").css("overflow", "hidden");
+
+                this.preview.css({
+                    width: $(window).width(),
+                    height: $(window).height()
+                })
+
+                adjustProgressBarWidth()
+            },
+            fixCodeBlocks: function () {
+                adjustCodeBlocks(this);
+            },
+            onchange: function () { // called after marked finsihed its rendering
+                fixEncoding(this);
+
+                if (this.settings.tool_type != "instructional-lab") {
+                    fixCustomPlugins(this, 'https://reward.skills.network/claim');
+                }
+            },
+            onload: function () {
+                $(".markdown-body").addClass("hidden")
+                $("[type=\"file\"]").bind("change", function () {
+                    alert($(this).val());
+                    authorEditor.cm.replaceSelection($(this).val());
+                    console.log($(this).val(), authorEditor);
+                });
+
+                this.fullscreen();
+                this.previewing();
+
+                setPreviewWatchToolbar(this);
+
+                if (tool_type != "instructional-lab") {
+                    fixCustomPlugins(this, 'https://reward.skills.network/claim');
+                }
+                else {
+                    if(audioFileUrl) {
+                        addAudioWidget(this, audioFileUrl);
+                    }
+                }
+
+                const preferredLanguage = bcp47ToISO6391(launch_presentation_locale) || (localStorage.getItem("preferredLanguage")?.toUpperCase() || "EN");
+
+                setTranslationContent(preferredLanguage).finally(() => {
+                    this.setMarkdown(this.getMarkdown());
+                    this.previewing();
+                    $(".markdown-body").removeClass("hidden")
+                });
+
+                
+                setAssetLibraryPrefixUrl(asset_library_prefix_url);
+                //comms with UI
+                setParentUrl(LABS_BASE_URL);
+                establishCommsWithUI(this);
+                //let the UI know that the author-ide has loaded
+                requestToUI({ type: "frame_loaded" });
+            }
+        });
+    });
+</script>
+</body>
+
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js?version=3.8.2"></script>
+
+</html>

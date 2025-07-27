@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* ================================ */
+/* 1. GLOBAL STYLES & RESET */
+/* ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Quan trọng để padding và border không làm tăng kích thước phần tử */
+}
+
+/* Đảm bảo html và body chiếm toàn bộ chiều cao để sticky footer hoạt động */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Biến body thành flex container */
+    flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc (header, nav, main, footer) */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================================ */
+/* 2. HEADER & NAVIGATION */
+/* ================================ */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 20px;
+    text-align: center;
+    /* Dùng flexbox để căn giữa nội dung header nếu cần */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background: #444;
+    color: #fff;
+    padding: 0.7rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* ================================ */
+/* 3. MAIN CONTENT LAYOUT */
+/* ================================ */
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+    flex-grow: 1; /* Quan trọng: Main content sẽ mở rộng để chiếm hết không gian còn lại, đẩy footer xuống */
+}
+
+section {
+    flex: 2; /* Chiếm 2 phần không gian */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+aside {
+    flex: 1; /* Chiếm 1 phần không gian */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+aside ul {
+    margin-top: 10px;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+}
+
+/* ================================ */
+/* 4. FOOTER */
+/* ================================ */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* ================================ */
+/* 5. MEDIA QUERIES (RESPONSIVE) */
+/* ================================ */
+@media (max-width: 768px) {
+    /* Đảm bảo main content xếp chồng lên nhau */
+    main {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    /* Navigation links xếp chồng và căn giữa */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    nav ul li a {
+        padding: 0.8rem 1.5rem;
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Header vẫn responsive trên màn hình nhỏ */
+    header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        min-height: auto; /* Bỏ min-height cố định */
+    }
+}

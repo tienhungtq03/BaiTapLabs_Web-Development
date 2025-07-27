@@ -1,0 +1,49 @@
+/* Tăng kích thước phông chữ trong biểu mẫu lên 200% */
+/* (Bạn cần xác định phần tử chứa biểu mẫu, ví dụ: form, body, hoặc một div bao quanh) */
+body { /* Hoặc một selector cụ thể hơn cho form của bạn */
+    font-size: 200%;
+}
+
+/* Căn giữa văn bản cho tất cả các phần tử <h1> */
+h1 {
+    text-align: center; /* [cite: 82] */
+}
+
+/* Thay đổi kích thước phông chữ của <h2> thành 40 pixel */
+h2 {
+    font-size: 40px; /* [cite: 83] */
+}
+
+/* Xóa lề dưới của <h2> */
+h2 { /* [cite: 84] */
+    margin-bottom: 0;
+}
+
+/* Làm cho tất cả các phần tử <input> chiếm toàn bộ chiều rộng */
+input { /* [cite: 88] */
+    width: 100%;
+    box-sizing: border-box; /* Để đảm bảo padding và border không làm tăng thêm chiều rộng */
+}
+
+/* Xóa tất cả các lề xung quanh tất cả các phần tử <p> */
+p { /* [cite: 89] */
+    margin: 0;
+}
+
+/* Đặt chiều rộng của tất cả các nút radio thành 15% */
+input[type="radio"] { /* [cite: 91] */
+    width: 15%;
+}
+
+/* Đặt chiều rộng của tất cả các nút thành 40% */
+/* (Bạn cần xác định selector chính xác cho nút của mình, ví dụ: input[type="submit"], button, hoặc một class) */
+input[type="submit"], button { /* [cite: 93] */
+    width: 40%;
+}
+
+/* Căn giữa nút kiểm tra bằng cách căn giữa <div> thích hợp */
+/* (Bạn cần xác định id hoặc class của div chứa nút kiểm tra) */
+/* Ví dụ nếu div có class="button-container" */
+.button-container { /* [cite: 95] */
+    text-align: center;
+}
