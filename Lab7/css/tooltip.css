@@ -1,0 +1,25 @@
+.tooltip {
+    /* apply style to HTML elements having a tooltip as class name */
+    display: none; /* tool tips are initially not visible */
+    position: relative; /* place tooltip according to the order in the HTML */
+    background-color: darkred; /* Đổi màu nền tooltip (ưu tiên giá trị mới hơn) */
+    border-radius: 5px; /* create a rounded corner */
+    text-align: center; /* center text inside the tooltip */
+    padding: 5px; /* add a 5px spacing around the text */
+    left: 1em; /* position the tooltip at 1em from the left */
+    color: yellow; /* Đổi màu chữ tooltip (ưu tiên giá trị mới hơn) */
+    border: 1px solid red; /* Thêm viền cho tooltip */
+}
+.tooltip:after {
+    /* uses a pseudo class to apply style to the text that is appended
+    to the tooltip */
+    content: "";
+    position: absolute; /* set an absolute position be specified (default is after) */
+    top: 10px; /* specify the absolute top position */
+    border-style: solid; /* specify solid border style*/
+    height: 0px; /* set height to 0px */
+    width: 0px; /* set width to 0px */
+    border-color: transparent darkred transparent transparent; /* Đổi màu mũi tên (ưu tiên giá trị mới hơn) */
+    border-width: 8px;
+    left: -8px;
+}

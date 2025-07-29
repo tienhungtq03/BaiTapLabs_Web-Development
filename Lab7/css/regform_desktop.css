@@ -1,0 +1,78 @@
+/*
+Style the form to a fixed width so the form looks the same even if the browser window is resize
+*/
+form {
+    width: 40em; /* set the width to 40em (đã có từ trước, giữ lại) */
+    background-color: lightblue; /* Thay đổi màu nền của form */
+    border: 2px solid darkblue; /* Thêm đường viền cho form */
+    padding: 20px; /* Thêm khoảng đệm bên trong form */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Đổi font chữ toàn trang */
+    color: #333; /* Đổi màu chữ mặc định */
+}
+
+/*
+Style the labels and input by aligning all input fields */
+label {
+    float: left; /* float to left */
+    text-align: right; /* align text to right */
+    width: 10em; /* set width to 10em */
+    margin-right: 1em; /* set right margin to 1em */
+    color: green; /* Đổi màu chữ của nhãn */
+    font-weight: bold; /* Làm đậm nhãn */
+}
+
+input {
+    /* General input styles can be added here */
+}
+
+/*
+Style text input to have spacing between input fields
+*/
+.textinput {
+    margin-bottom: 10px; /* Example spacing */
+}
+
+/*
+Style radio button input to a single line note that declarations are inherited
+*/
+.radioinput fieldset {
+    /* Fieldset specific styles */
+}
+.radioinput legend {
+    border: none; /* remove borders */
+    float: left; /* float to left */
+    text-align: right; /* align text to right */
+    width: 9em; /* set width to 9em */
+}
+.radioinput input {
+    width: 2em; /* set width to 2em */
+}
+.radioinput label {
+    float: none; /* disable float */
+    text-align: left; /* align text to left */
+}
+/* Style button input note that declarations are inherited */
+.buttoninput {
+    /* Button input specific styles */
+}
+.buttoninput input {
+    text-align: right; /* align text to right */
+    width: auto; /* set width to auto*/
+    background-color: #4CAF50; /* Màu nền nút */
+    color: white; /* Màu chữ nút */
+    padding: 10px 15px; /* Khoảng đệm nút */
+    border-radius: 8px; /* Bo tròn góc nút */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi di vào nút */
+}
+.buttoninput input:hover {
+    background-color: #45a049; /* Màu nền khi di chuột qua */
+}
+
+
+/* Additional pseudo class code for focus highlighting */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: lightgreen; /* Thay đổi màu highlight (ưu tiên giá trị mới hơn) */
+}
