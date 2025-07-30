@@ -1,0 +1,472 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+#home {
+  background-color:  #7600bc;
+  padding: 2cm 0; /* Thay padding-bottom và padding-top bằng một giá trị chung */
+  margin: 0; /* Đặt margin về 0 để tránh bị lệch */
+  width: 100%; /* Đảm bảo chiều rộng đầy đủ */
+  display: flex; /* Sử dụng flexbox để căn chỉnh dễ hơn */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Đẩy nội dung ra hai bên */
+}
+
+.topmenu {
+  color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration:none;
+}
+
+.topmenu:hover {
+  color: white;
+  /* Add the styles here */
+}
+
+.topdiv {
+  /* float: right; */ /* Bỏ float vì đã dùng flexbox trên #home */
+  padding-right: 2cm; /* Giữ padding phải để tạo khoảng cách */
+  display: flex; /* Sử dụng flexbox cho các menu con */
+  gap: 15px; /* Tạo khoảng cách giữa các menu item */
+}
+
+.profile_name {
+  /* float: left; */ /* Bỏ float vì đã dùng flexbox trên #home */
+  padding-left: 2cm;
+  color: white; /* Thêm màu chữ để dễ nhìn trên nền tím */
+  font-size: 28px; /* Tăng kích thước chữ để nổi bật */
+  font-weight: bold;
+}
+
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact_info img {
+  width:25px;
+  margin-right: 10px;
+  float:left;
+}
+
+/* Titles */
+
+h2 {
+  text-align: justify;
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  color: #7600bc;
+  margin: 30px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+/* Used in the About Me sections */
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu không đủ chỗ */
+  justify-content: center; /* Căn giữa các mục */
+  align-items: center;
+  padding: 50px 20px; /* Thêm padding cho các container chung */
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  margin: 0 auto; /* Căn giữa container */
+}
+
+/* .about-me {
+  display: flex;
+  align-items: center;
+} */ /* Loại bỏ class này nếu không cần thiết, hoặc điều chỉnh nó.
+         Vì .container đã là flex, có thể không cần .about-me là flex nữa.
+         Hoặc bạn có thể giữ và điều chỉnh để nó bao bọc nội dung cụ thể.*/
+
+#about-me { /* Đảm bảo section này có display flex nếu muốn ảnh và chữ cạnh nhau */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Khoảng cách giữa ảnh và chữ */
+}
+#about-me h1 {
+    font-size: 65px;
+    margin-top: 0; /* Bỏ margin-top lớn */
+    color: #7600bc;
+}
+
+#about-me p {
+    font-size: 22px; /* Điều chỉnh kích thước chữ */
+    color: rgb(85, 85, 85); /* Điều chỉnh màu chữ cho dễ đọc hơn */
+    margin-top: 10px; /* Thêm margin-top nhỏ */
+    max-width: 600px; /* Giới hạn chiều rộng đoạn văn */
+}
+
+.profile_image {
+  max-width: 450px; /* Giảm kích thước ảnh để cân đối hơn */
+  height: auto; /* Đảm bảo tỷ lệ ảnh không bị biến dạng */
+  margin: 0; /* Bỏ margin cũ */
+}
+#about-me h1 {
+  font-size: 65px;
+  margin-top: 90px;
+  color: #7600bc;
+}
+
+#about-me p {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: -1cm;
+}
+
+.profile_image {
+  width: 550px;
+  height: fit-content;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+/* Skills */
+
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.skill {
+  border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+}
+
+.skill img {
+  height: 35px;
+  align-items: center;
+}
+
+.skills h6 {
+  align-items: center;
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+} 
+
+.skills p {
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+} 
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Styles for skill logos */
+.skill-item .skill-logo {
+    width: 60px !important; /* Đảm bảo chiều rộng là 60px và ghi đè các quy tắc khác */
+    height: auto !important; /* Đảm bảo chiều cao tự động và ghi đè các quy tắc khác */
+    max-width: 100% !important; /* Đảm bảo không vượt quá chiều rộng của phần tử cha */
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Projects */
+
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.project-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/* Recommendations */
+
+.all_recommendations {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 21.875rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  border:1px solid gray;
+  font-size: 18px;
+  height:150px
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Scroll to Top Button */
+
+.iconbutton{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Form Pop-up */
+
+.popup {
+  width:400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  /* padding: 30px; */
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+/* Recommendation Form */
+
+input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  margin: 10px;  
+  width:100%;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: thin solid white;
+  width: 50%;
+}
+
+/* Buttons */
+
+button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+/* Styles for Skills section */
+#skills {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skill-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skill-item h3 {
+  color: #7600bc;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Styles for Projects section (if it's not already styled in project-card) */
+#projects {
+    padding: 50px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Ensure project-card styles are appropriate for the grid */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #7600bc;
+    margin-bottom: 10px;
+}
+
+.project-card ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.project-card li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Additional styles for recommendations to ensure consistent spacing */
+#recommendations {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#all_recommendations {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Space between recommendation cards */
+    max-width: 1200px; /* Max width of the grid */
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+}
+
+.recommendation {
+    flex: 1 1 300px; /* Allows flexibility in width */
+    max-width: 400px; /* Max width for each card */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
+    min-height: 150px; /* Ensure consistent height */
+}
+
+.recommendation span {
+    color: #7600bc;
+    font-size: 1.5em;
+    font-weight: bold;
+}
