@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lexus GS 460</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/allcars_desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Group 2 Garage</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-detail">
+            <h2>Lexus GS 460</h2>
+
+            <!-- Main Image -->
+            <img id="mainImage" class="detail-main-img" src="image/lexus_1.jpg" alt="Lexus GS 460- Details">
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbs">
+                <img src="image/lexus_1.jpg" alt="Front View" onclick="swapImage(this)">
+                <img src="image/lexus_2.jpg" alt="Side View" onclick="swapImage(this)">
+                <img src="image/lexus_3.jpg" alt="Rear View" onclick="swapImage(this)">
+                <img src="image/lexus_4.jpg" alt="Close-up" onclick="swapImage(this)">
+            </div>
+
+            <!-- Bike Specifications -->
+            <table class="car-spec-table">
+                <tr><th>Make</th><td>Lexus</td><th>Model</th><td>GS</td></tr>
+                <tr><th>Year</th><td>2008</td><th>Mileage</th><td>83,900 km</td></tr>
+                <tr><th>Price</th><td>1.2 billion VND</td><th>Location</th><td>Miniona</td></tr>
+                <tr><th>Seller</th><td>lexuswrigar</td><th>Engine</th><td>4.6L V8</td></tr>
+                <tr><th>Drivetrain</th><td>Rear-wheel drive</td><th>Transmission</th><td>Automatic(8 speed)</td></tr>
+                <tr><th>Body Style</th><td>Sedan</td><th>Exterior Color</th><td>Mercury Metallic</td></tr>
+                <tr><th>Interior Color</th><td>Alpine</td><th>Seller Type</th><td>Private Party</td></tr>
+            </table>
+
+             <a href="testdrive-booking.html" class="testdrive-btn">Book Now</a>
+
+            <!-- Highlights -->
+            <h3>Highlights</h3>
+            <ul>
+                <li>The attached Carfax vehicle history report shows no accidents or mileage discrepancies in this GS 460’s past.</li>
+                <li>Notable modifications reported by the seller include Akebono brake pads, an aftermarket front lip and grille, and black headlight housings.</li>
+                <li>Power comes from a 4.6-liter V8, rated at 342 horsepower and 339 lb-ft of torque. Output is sent to the rear wheels via an 8-speed automatic transmission.</li>
+               
+            </ul>
+
+            <!-- Equipment -->
+            <h3>Equipment</h3>
+            <ul>
+                <li>18-inch alloy wheels</li>
+                <li>Adaptive variable suspension</li>
+                <li>Power sunroof</li>
+                <li>Heated, ventilated, and power-adjustable front seats</li>
+            </ul>
+
+            <!-- Video -->
+            <h3>Video</h3>
+            <div class="video-container">
+                <video width="400" height="225" controls>
+                    <source src="video/lexus.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <a href="allcars.html" class="details-btn">Back to List</a>
+         
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Group 2 Garage</h3>
+                <p>Reliable rides, honest deals, and excellent service.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="category.html">List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function swapImage(imgElement) {
+            document.getElementById('mainImage').src = imgElement.src;
+        }
+    </script>
+</body>
+</html>

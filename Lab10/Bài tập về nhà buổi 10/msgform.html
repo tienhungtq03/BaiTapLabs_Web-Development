@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web development" />
+    <meta name="keywords"    content="Message Form" />
+    <meta name="author"      content="put your name here" />
+    <link href="msgform.css" rel="stylesheet" type="text/css" />
+    <script src="validation.js"></script>
+    <title>Web Development Message Form</title>
+</head>
+<body>
+    <h1 class="center">Web Development</h1>
+    <p class="center">Post your message</p>
+
+    <!-- Thêm biểu mẫu tại đây -->
+    <form id="msgform" method="post" action="msgform.php">
+        <p>
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" />
+        </p>
+        <p>
+            <label for="sid">Student ID:</label>
+            <input type="text" id="sid" name="sid" />
+        </p>
+        <p>
+            <input type="submit" value="POST" />
+        </p>
+    </form>
+
+</body>
+</html>

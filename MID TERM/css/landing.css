@@ -1,0 +1,412 @@
+/* --- Các thiết lập chung (Global Styles) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(26, 26, 26, 0.5); /* Nền trong suốt */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a:hover {
+    color: #bbb;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    
+    
+    background-image: url('https://cdn.speednik.com/powerautorax55/wp-content/blogs.dir/1/files/2020/02/rare-rides-the-1970-ford-mustang-boss-429-2020-02-08_11-30-37_809466.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 73, 73, 0.4); /* Lớp phủ mờ */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-image: linear-gradient(90deg, #38bdf8, #1e3a8a);
+    color: #fff;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(90deg, #1e3a8a, #38bdf8);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-bar h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.search-input-group {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input-group input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-input-group button {
+    background-color: #3c78d8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search-input-group button img {
+    height: 20px;
+}
+
+/* --- Featured Vehicles Section --- */
+.featured-vehicles-section {
+    padding: 60px 40px;
+    background-color: #272727;
+}
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featured-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.featured-header a {
+    color: #f1f1f1;
+    font-size: 1rem;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px; /* Thêm padding để nút điều khiển không bị che */
+}
+
+.slider {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featured-car {
+    min-width: 33.333%; /* Hiển thị 3 xe trên 1 màn hình */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-car img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.car-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-brand {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.car-model {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.view-details {
+    color: #3c78d8;
+    font-weight: bold;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider-controls button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-controls button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    background-color: #121212;
+    padding: 60px 40px;
+    text-align: center;
+}
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.testimonials {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.testimonial-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    flex: 1;
+}
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.testimonial-card span {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* --- About Section --- */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 400px;
+}
+.about-content {
+    flex: 1;
+    padding: 40px;
+    background: #ebebeb;
+    color: #000;
+}
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.about-content p {
+    margin-bottom: 20px;
+}
+.about-image {
+    flex: 1;
+    background-image: url('images/dealership.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Testimonial Photos */
+.testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #38bdf8;
+}
+
+/* About Section Photo */
+.about-image img.about-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+/* --- Contact CTA --- */
+.contact-cta {
+    background: linear-gradient(90deg, #38bdf8, #1e3a8a);
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+}
+.contact-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.contact-cta p {
+    margin-bottom: 20px;
+}
+
+/* --- Footer --- */
+.footer {
+    background: linear-gradient(90deg, var(--primary1), var(--primary2));
+    color: white;
+    padding: 40px;
+    width: 100%
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left h3 {
+    margin-bottom: 10px;
+}
+.footer-right ul {
+    list-style: none;
+}
+.footer-right ul li {
+    margin-bottom: 5px;
+}
+.footer-right ul li a {
+    color: #bbb;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+/* --- Scroll Animation Base --- */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* When in view */
+.animate {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+

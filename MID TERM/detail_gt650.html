@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Royal Enfield Continental GT 650 - Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/allcars_desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Group 2 Garage</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-detail">
+            <h2>Royal Enfield Continental GT 650</h2>
+
+            <!-- Main Image -->
+            <img id="mainImage" class="detail-main-img" src="image/650_1.jpg" alt="Royal Enfield Continental GT 650 Main">
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbs">
+                <img src="image/650_1.jpg" alt="Front View" onclick="swapImage(this)">
+                <img src="image/650_2.jpg" alt="Side View" onclick="swapImage(this)">
+                <img src="image/650_3.jpg" alt="Rear View" onclick="swapImage(this)">
+                <img src="image/650_4.jpg" alt="Close-up" onclick="swapImage(this)">
+            </div>
+
+            <!-- Bike Specifications -->
+            <table class="car-spec-table">
+                <tr><th>Make</th><td>Royal Enfield</td><th>Model</th><td>Continental GT 650</td></tr>
+                <tr><th>Year</th><td>2019</td><th>Mileage</th><td>25,000 km</td></tr>
+                <tr><th>Price</th><td>125 million VND</td><th>Location</th><td>Hanoi, Vietnam</td></tr>
+                <tr><th>Seller</th><td>harrybui</td><th>Engine</th><td>648cc Parallel Twin</td></tr>
+                <tr><th>Power</th><td>47 hp @ 7,250 RPM</td><th>Torque</th><td>52 Nm @ 5,250 RPM</td></tr>
+                <tr><th>Transmission</th><td>6-speed manual</td><th>Fuel Economy</th><td>~5.3 L/100km</td></tr>
+                <tr><th>Body Style</th><td>Café Racer</td><th>Color</th><td>Black, Gold</td></tr>
+            </table>
+
+             <a href="testdrive-booking.html" class="testdrive-btn">Book Now</a>
+
+            <!-- Highlights -->
+            <h3>Highlights</h3>
+            <ul>
+                <li>Classic café racer styling with clip-on handlebars</li>
+                <li>Responsive 648cc parallel-twin engine</li>
+                <li>Aftermarket exhaust with deep, throaty sound</li>
+                <li>Well-maintained with full service history</li>
+            </ul>
+
+            <!-- Equipment -->
+            <h3>Equipment</h3>
+            <ul>
+                <li>Dual-channel ABS</li>
+                <li>Slipper clutch for smoother downshifts</li>
+                <li>Upswept exhaust for improved cornering clearance</li>
+                <li>Custom leather seat for better comfort</li>
+            </ul>
+
+            <!-- Video -->
+            <h3>Video</h3>
+            <div class="video-container">
+                <video width="400" height="225" controls>
+                    <source src="image/650.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <a href="allcars.html" class="details-btn">Back to List</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Group 2 Garage</h3>
+                <p>Reliable rides, honest deals, and excellent service.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="category.html">List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function swapImage(imgElement) {
+            document.getElementById('mainImage').src = imgElement.src;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vehicle Catalog — Cars & Motorcycles</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/category.css">
+<link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Group 2 Garage</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="landingpage.html">Home</a></li>
+      <li><a href="category.html">List</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page">
+  <div style="height: 100px;"></div>
+  <div class="catalog-header">
+    <h1>Vehicle Catalog</h1>
+    <p>Explore our Cars and Motorcycles — tap a card for details</p>
+  </div>
+
+  <!-- toolbar -->
+  <div class="toolbar">
+    <div class="search">
+      <input id="q" type="search" placeholder="Search model or keyword..." aria-label="Search models" />
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-type="all">All</button>
+      <button class="tab" data-type="car">Cars</button>
+      <button class="tab" data-type="motorcycle">Motorcycles</button>
+    </div>
+
+    <div class="sort-count">
+      <select id="sort" class="select">
+        <option value="popular">Sort: Popular</option>
+        <option value="alpha">Sort: A → Z</option>
+      </select>
+      <div id="count">0</div>
+    </div>
+  </div>
+
+  <!-- filters -->
+  <div class="controls">
+    <select id="filterPrice" class="select">
+      <option value="all">All price ranges</option>
+      <option value="low">&lt; $20k</option>
+      <option value="mid">$20k–$50k</option>
+      <option value="high">&gt; $50k</option>
+    </select>
+    <button id="clearFav" class="btn btn-outline">Clear favorites</button>
+  </div>
+
+  <section id="grid" class="grid">
+  <a href="detail-camry.html" class="card">
+    <img src="image/camry_1.jpg" alt="Toyota Camry">
+    <div class="body">
+      <h3>2007 Toyota Colara</h3>
+    </div>
+  </a>
+  <a href="detail-civic.html" class="card">
+    <img src="image/civic_1.jpg" alt="Honda Civic">
+    <div class="body">
+      <h3>2015 Honda Civic</h3>
+    </div>
+  </a>
+  <a href="detail-mazda.html" class="card">
+    <img src="image/mazda_1.jpg" alt="Mazda 3">
+    <div class="body">
+      <h3>2019 Mazda MX-5</h3>
+    </div>
+  </a>
+  <a href="detail-lexus.html" class="card">
+    <img src="image/lexus_1.jpg" alt="Lexus RX 350">
+    <div class="body">
+      <h3>2008 Lexus GS 460</h3>
+    </div>
+  </a>
+  <a href="detail-jeep.html" class="card">
+    <img src="image/jeep_1.jpg" alt="Jeep Wrangler">
+    <div class="body">
+      <h3>2024 Jeep Wrangler Unlimited Rubicon 392</h3>
+    </div>
+  </a>
+  <a href="detail-porsche.html" class="card">
+    <img src="image/porsche_1.jpg" alt="Porsche 911">
+    <div class="body">
+      <h3>2023 Porsche 718 Boxster Spyder</h3>
+    </div>
+  </a>
+  <a href="detail-tesla.html" class="card">
+    <img src="image/tesla_1.jpg" alt="Tesla Model S">
+    <div class="body">
+      <h3>2016 Tesla Model S 90D</h3>
+    </div>
+  </a>
+  <a href="detail-toyota.html" class="card">
+    <img src="image/toyota_1.jpg" alt="Toyota Fortuner">
+    <div class="body">
+      <h3>2020 Toyota Supra</h3>
+    </div>
+  </a>
+  <a href="detail-volkswagen.html" class="card">
+    <img src="image/volkswagen_1.jpg" alt="Volkswagen GTI S">
+    <div class="body">
+      <h3>2020 Volkswagen GTI S</h3>
+    </div>
+  </a>
+  <a href="detail-ranger.html" class="card">
+    <img src="image/ranger_1.jpg" alt="Ford Ranger">
+    <div class="body">
+      <h3>2019 Ford F-150 Raptor</h3>
+    </div>
+  </a>
+  <a href="detail-subaru.html" class="card">
+    <img src="image/subaru_1.jpg" alt="Subaru Forester">
+    <div class="body">
+      <h3>1997 Subaru WRX Wagon</h3>
+    </div>
+  </a>
+  <a href="detail-audi.html" class="card">
+    <img src="image/audi_1.jpg" alt="Audi A4">
+    <div class="body">
+      <h3>2007 Audi RS4</h3>
+    </div>
+  </a>
+  <a href="detail_gt650.html" class="card">
+    <img src="image/650_1.jpg" alt="Royal Enfield Continental GT 650">
+    <div class="body">
+      <h3>2020 Royal Enfield Continental GT 650</h3>
+    </div>
+  </a>
+</section>
+
+
+<!-- modal -->
+<div id="modal" class="modal">
+  <div class="panel">
+    <img id="modalImg" src="" alt="Vehicle image" />
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <div class="modal-actions">
+      <button id="modalClose" class="btn btn-outline">Close</button>
+      <button id="modalAction" class="btn btn-primary">View Details</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>Group 2 Garage</h3>
+      <p>Reliable cars, honest deals, and excellent service.</p>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li><a href="landingpage.html">Home</a></li>
+        <li><a href="category.html">List</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/catalog.js"></script>
+</body>
+</html>

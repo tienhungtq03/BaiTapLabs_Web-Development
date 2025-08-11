@@ -1,0 +1,259 @@
+/* --- Các thiết lập chung (Global Styles) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(26, 26, 26, 0.5); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a:hover {
+    color: #bbb;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    
+    
+    background-image: url('https://cdn.speednik.com/powerautorax55/wp-content/blogs.dir/1/files/2020/02/rare-rides-the-1970-ford-mustang-boss-429-2020-02-08_11-30-37_809466.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 73, 73, 0.4); /* Lớp phủ mờ */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #3c78d8; /* Màu xanh lam */
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2e62b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-bar h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.search-input-group {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input-group input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-input-group button {
+    background-color: #3c78d8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search-input-group button img {
+    height: 20px;
+}
+
+/* --- Featured Vehicles Section --- */
+.featured-vehicles-section {
+    padding: 60px 40px;
+    background-color: #111;
+}
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featured-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.featured-header a {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px; /* Thêm padding để nút điều khiển không bị che */
+}
+
+.slider {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featured-car {
+    min-width: 33.333%; /* Hiển thị 3 xe trên 1 màn hình */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-car img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.car-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-brand {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.car-model {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.view-details {
+    color: #3c78d8;
+    font-weight: bold;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider-controls button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-controls button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,157 @@
+/* --- General --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #38bdf8;
+}
+
+/* --- Header --- */
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+header nav a {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #3c78d8;
+    transition: background-color 0.3s;
+}
+header nav a:hover {
+    background-color: #2e62b3;
+}
+
+/* --- Car Detail --- */
+.car-detail {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.car-detail h2 {
+    font-size: 1.4rem;
+    color: #38bdf8;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.car-detail h3 {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #38bdf8;
+}
+
+/* Image Gallery */
+.image-gallery {
+    max-width: 95%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+.detail-main-img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #38bdf8;
+    margin-bottom: 10px;
+}
+.thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.thumbs img {
+    width: 65px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.thumbs img:hover {
+    border-color: #38bdf8;
+}
+
+/* Specs Table */
+.car-spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+}
+.car-spec-table th,
+.car-spec-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    font-size: 0.85rem;
+}
+.car-spec-table th {
+    background-color: #333;
+    color: #38bdf8;
+}
+.car-spec-table td {
+    background-color: #1a1a1a;
+}
+
+/* Lists */
+.car-detail ul {
+    padding-left: 18px;
+    margin-top: 8px;
+}
+.car-detail ul li {
+    margin-bottom: 6px;
+}
+
+/* Video */
+.video-container {
+    margin: 16px 0;
+    text-align: center;
+}
+.video-container video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(56,189,248,0.4);
+}
+
+/* Back Button */
+.details-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #38bdf8;
+    color: #111;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+.details-btn:hover {
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+}

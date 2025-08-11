@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subaru Impreza WRX Wagon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/allcars_desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Group 2 Garage</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-detail">
+            <h2>Subaru Impreza WRX Wagon</h2>
+
+            <!-- Main Image -->
+            <img id="mainImage" class="detail-main-img" src="image/subaru_1.jpg" alt="Subaru Impreza WRX Wagon- Details">
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbs">
+                <img src="image/subaru_1.jpg" alt="Front View" onclick="swapImage(this)">
+                <img src="image/subaru_2.jpg" alt="Side View" onclick="swapImage(this)">
+                <img src="image/subaru_3.jpg" alt="Rear View" onclick="swapImage(this)">
+                <img src="image/subaru_4.jpg" alt="Close-up" onclick="swapImage(this)">
+            </div>
+
+            <!-- Bike Specifications -->
+            <table class="car-spec-table">
+                <tr><th>Make</th><td>Subaru</td><th>Model</th><td>WRX</td></tr>
+                <tr><th>Year</th><td>1997</td><th>Mileage</th><td>75,000 km</td></tr>
+                <tr><th>Price</th><td>1 billion VND</td><th>Location</th><td>Denver</td></tr>
+                <tr><th>Seller</th><td>jakeland</td><th>Engine</th><td>2.0L Turbocharged Flat-4</td></tr>
+                <tr><th>Drivetrain</th><td>4WD/AWD</td><th>Transmission</th><td>Manual (5-Speed)</td></tr>
+                <tr><th>Body Style</th><td>Wagon</td><th>Exterior Color</th><td>Light Silver Metallic</td></tr>
+                <tr><th>Interior Color</th><td>Alpine</td><th>Seller Type</th><td>Dealer</td></tr>
+            </table>
+
+             <a href="testdrive-booking.html" class="testdrive-btn">Book Now</a>
+
+            <!-- Highlights -->
+            <h3>Highlights</h3>
+            <ul>
+                <li>THIS… is a 1997 Subaru Impreza WRX Wagon, finished in silver with a black and grey interior.</li>
+                <li>A partial list of notable equipment reported by the selling dealer includes 16-inch wheels, a rear spoiler, cloth upholstery.</li>
+                <li>Notable modifications reported by the selling dealer include an aftermarket exhaust, rain guards, a BLITZ Racing boost gauge, and a Clarion CX315 head unit.</li>
+               
+            </ul>
+
+            <!-- Equipment -->
+            <h3>Equipment</h3>
+            <ul>
+                <li>16-inch wheels</li>
+                <li>Fog lights</li>
+                <li>Rear spoiler</li>
+                <li>Cloth upholstery</li>
+            </ul>
+
+            <!-- Video -->
+            <h3>Video</h3>
+            <div class="video-container">
+                <video width="400" height="225" controls>
+                    <source src="video/subaru.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <a href="allcars.html" class="details-btn">Back to List</a>
+           
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Group 2 Garage</h3>
+                <p>Reliable rides, honest deals, and excellent service.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="category.html">List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function swapImage(imgElement) {
+            document.getElementById('mainImage').src = imgElement.src;
+        }
+    </script>
+</body>
+</html>

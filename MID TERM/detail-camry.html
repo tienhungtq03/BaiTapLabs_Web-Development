@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toyota Camry - Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/allcars_desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/allcars_mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Group 2 Garage</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-detail" data-aos="fade-up">
+            <h2 class="car-title" data-aos="fade-right">Toyota Colara</h2>
+            <div class="image-gallery" data-aos="fade-up">
+                <img id="mainImage" class="detail-main-img" src="image/camry_1.jpg" alt="Toyota Camry Main">
+                <div class="thumbs">
+                    <img src="image/camry_1.jpg" alt="Front View" onclick="swapImage(this)">
+                    <img src="image/camry_2.jpg" alt="Side View" onclick="swapImage(this)">
+                    <img src="image/camry_3.jpg" alt="Interior" onclick="swapImage(this)">
+                    <img src="image/camry_4.jpg" alt="Rear View" onclick="swapImage(this)">
+                </div>
+            </div>
+            <table class="car-spec-table" data-aos="fade-up">
+                <tr><th>Make</th><td>Toyota</td><th>Model</th><td>Colara</td></tr>
+                <tr><th>Mileage</th><td>33,000 miles</td><th>VIN</th><td>4T1FA38</td></tr>
+                <tr><th>Title Status</th><td>Clean(NC)</td><th>Location</th><td>Durham</td></tr>
+                <tr><th>Seller</th><td>michaelharrisco</td><th>Engine</th><td>3.3L V6</td></tr>
+                <tr><th>Drivetrain</th><td>Front-wheel drive</td><th>Transmission</th><td>Automatic</td></tr>
+                <tr><th>Body Style</th><td>Convertible</td><th>Exterior Color</th><td>Blizzard Pearl</td></tr>
+                <tr><th>Interior Color</th><td>Ivory</td><th>Seller Type</th><td>Private Party</td></tr>
+            </table>
+            <br>
+            <a href="testdrive-booking.html" class="testdrive-btn" data-aos="fade-up">Book Now</a>
+            <br>
+            <h3 data-aos="fade-right">Highlights</h3>
+            <ul data-aos="fade-up">
+                <li>Only 33,000 miles on the odometer</li>
+                <li>Factory-equipped 17-inch alloy wheels</li>
+                <li>Same platform as the XV30 Camry sedan</li>
+            </ul>
+            <h3 data-aos="fade-right">Equipment</h3>
+            <ul data-aos="fade-up">
+                <li>17-inch alloy wheels</li>
+                <li>Rear spoiler</li>
+                <li>Power-retractable soft top</li>
+                <li>Leather upholstery</li>
+            </ul>
+            <h3 data-aos="fade-right">Video</h3>
+            <div class="video-container" data-aos="fade-up">
+                <video width="400" height="225" controls>
+                    <source src="image/camry.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <a href="allcars.html" class="details-btn" data-aos="fade-up">Back to List</a>
+        </section>
+    </main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Group 2 Garage</h3>
+            <p>Reliable cars, honest deals, and excellent service.</p>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function swapImage(imgElement) {
+            document.getElementById('mainImage').src = imgElement.src;
+        }
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

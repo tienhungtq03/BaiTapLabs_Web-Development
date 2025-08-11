@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Bán Xe - Reliable Car Dealership</title>
+    <link rel="stylesheet" href="css/listing.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Group 2 Garage</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-form-section">
+            <div class="listing-form-container">
+                <h1>Sell Your Car Today!</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="car-brand">Manufacturer</label>
+                        <input type="text" id="car-brand" name="car-brand" placeholder="Example: Ford" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-model">Model</label>
+                        <input type="text" id="car-model" name="car-model" placeholder="Example: Mustang GT" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-year">Year</label>
+                        <input type="number" id="car-year" name="car-year" placeholder="Example: 2018" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-price">Price (VND)</label>
+                        <input type="number" id="car-price" name="car-price" placeholder="Example: 850,000,000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-mileage">Milage (km)</label>
+                        <input type="number" id="car-mileage" name="car-mileage" placeholder="Example: 15,000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-description">Description</label>
+                        <textarea id="car-description" name="car-description" placeholder="Describe Your Car..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-contact">Contact</label>
+                        <input type="text" id="car-contact" name="car-contact" placeholder="Your Phone Number or Email" required>
+                    </div>
+                    <div class="form-group file-upload">
+                        <label for="car-images">Drag or Press to Select Images</label>
+                        <input type="file" id="car-images" name="car-images" multiple accept="image/*">
+                    </div>
+                    <button type="submit" class="submit-button">List Your Car Now</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+         
+        <footer class="footer fade-in">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Group 2 Garage</h3>
+            <p>Reliable cars, honest deals, and excellent service.</p>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+    </div>
+</footer>
+
+    </main>
+</body>
+</html>

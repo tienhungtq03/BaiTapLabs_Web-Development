@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--#include file="header.ssi" -->
+    <!--#include file="nav.ssi" -->
+
+    <main>
+        <h2>Main Content Area</h2>
+        <p>This is the main content of the page. We will be demonstrating Server Side Includes and PHP includes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </main>
+
+    <!--#include file="footer.ssi" -->
+</body>
+</html>

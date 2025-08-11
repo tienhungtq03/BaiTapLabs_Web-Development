@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Test Drive Booking</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/testdrive.css">
+<link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Group 2 Garage</div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <li><a href="category.html">List</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="testdrive-hero">
+    <h1>Book Your Test Drive</h1>
+    <p>Select your favorite model, schedule a time, and experience it now!</p>
+</section>
+
+<div class="container">
+  <form id="bookingForm">
+    <label>Full Name</label>
+    <input type="text" name="fullName" placeholder="John Doe" required />
+    <label>Email</label>
+    <input type="email" name="email" placeholder="email@example.com" required />
+    <label>Phone Number</label>
+    <input type="text" name="phone" placeholder="0123456789" required />
+    <label>Vehicle Type</label>
+    <select name="vehicleType">
+      <option value="car">Car</option>
+      <option value="motorcycle">Motorcycle</option>
+    </select>
+    <label>Model</label>
+    <select name="model" required>
+      <option value="">-- Select Model --</option>
+      <option value="Toyota Camry">Toyota Camry</option>
+      <option value="Honda Civic">Honda Civic</option>
+      <option value="Ford Ranger">Ford Ranger</option>
+      <option value="Mazda MX-5">Mazda MX-5</option>
+    </select>
+    <label>Location</label>
+    <select name="location" required>
+      <option value="">-- Select Location --</option>
+      <option value="204A Âu Cơ, Quảng An Ward, Tây Hồ District, Hanoi City">
+        204A Âu Cơ, Quảng An Ward, Tây Hồ District, Hanoi City
+      </option>
+      <option value="48 Hào Nam, Chợ Dừa, Đống Đa, Hanoi, Vietnam">
+        48 Hào Nam, Chợ Dừa, Đống Đa, Hanoi, Vietnam
+      </option>
+    </select>
+    <label>Date</label>
+    <input type="date" name="date" required />
+    <label>Time</label>
+    <input type="time" name="time" required />
+    <label>Duration (minutes)</label>
+    <input type="number" name="durationMins" value="30" min="10" max="240" />
+    <label>Additional Notes</label>
+    <textarea name="notes" placeholder="Any special requests..."></textarea>
+    <div class="terms">
+      <input type="checkbox" name="agree" id="agree" />
+      <label for="agree">I agree to the test drive terms.</label>
+    </div>
+    <button type="submit" class="btn-primary">Book Now</button>
+    <button type="reset" class="btn-secondary">Clear Form</button>
+  </form>
+
+  <aside>
+    <h3>Instructions</h3>
+    <p>1. Fill in your information and choose your desired model.</p>
+    <p>2. Select your preferred date and time, then confirm.</p>
+    <p>3. Our staff will contact you to confirm your appointment.</p>
+    <img src="https://media.carsandbids.com/cdn-cgi/image/width=800,quality=80/01d42513dfd01ef57abada23022249030d6c90e5/photos/application/s-ZAV863l/edit/8R7Sq.jpg" alt="Car" />
+  </aside>
+</div>
+
+<div class="container" style="grid-template-columns: 1fr;">
+  <table id="bookingTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Type</th>
+        <th>Model</th>
+        <th>Date & Time</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <h4>Booking Successful!</h4>
+    <p>We will contact you shortly to confirm your appointment.</p>
+    <button onclick="closePopup()" class="btn-primary" style="margin-top:10px;">Close</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer fade-in">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Group 2 Garage</h3>
+            <p>Reliable cars, honest deals, and excellent service.</p>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

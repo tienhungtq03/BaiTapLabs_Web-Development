@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audi RS4 Sedan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/allcars_desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Group 2 Garage</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="category.html">List</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-detail">
+            <h2>Audi RS4 Sedan</h2>
+
+            <!-- Main Image -->
+            <img id="mainImage" class="detail-main-img" src="image/audi_1.jpg" alt="Audi RS4 Sedan - Details">
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbs">
+                <img src="image/audi_1.jpg" alt="Front View" onclick="swapImage(this)">
+                <img src="image/audi_2.jpg" alt="Side View" onclick="swapImage(this)">
+                <img src="image/audi_3.jpg" alt="Rear View" onclick="swapImage(this)">
+                <img src="image/audi_4.jpg" alt="Close-up" onclick="swapImage(this)">
+            </div>
+
+            <!-- Bike Specifications -->
+            <table class="car-spec-table">
+                <tr><th>Make</th><td>Audi</td><th>Model</th><td>B7 RS4</td></tr>
+                <tr><th>Year</th><td>2007</td><th>Mileage</th><td>62,400 km</td></tr>
+                <tr><th>Price</th><td>1.4 billion VND</td><th>Location</th><td>Denver,CO</td></tr>
+                <tr><th>Seller</th><td>PMH</td><th>Engine</th><td>4.2L V8</td></tr>
+                <tr><th>Drivetrain</th><td>4WD/AWD</td><th>Transmission</th><td>Manual (6 Speed)</td></tr>
+                <tr><th>Body Style</th><td>Sedan</td><th>Exterior Color</th><td>Phantom Black Pearl Effect</td></tr>
+                <tr><th>Interior Color</th><td>Black</td><th>Seller Type</th><td>Private Party</td></tr>
+            </table>
+
+             <a href="testdrive-booking.html" class="testdrive-btn">Book Now</a>
+
+            <!-- Highlights -->
+            <h3>Highlights</h3>
+            <ul>
+                <li>According to the window sticker provided in the gallery, notable factory equipment includes the Premium Package</li>
+                <li>The B7 RS4, introduced in 2006 and offered in Cabriolet or sedan variants, was a high-performance variant of the Audi A4.</li>
+                <li>Power comes from a 4.2-liter V8, rated at 420 horsepower and 317 lb-ft of torque.</li>
+               
+            </ul>
+
+            <!-- Equipment -->
+            <h3>Equipment</h3>
+            <ul>
+                <li>19-inch 7-double-spoke wheels</li>
+                <li>Dynamic Ride Control (DRC)</li>
+                <li>Heated and power-adjustable front seats</li>
+                <li>Rear parking sensors</li>
+            </ul>
+
+            <!-- Video -->
+            <h3>Video</h3>
+            <div class="video-container">
+                <video width="400" height="225" controls>
+                    <source src="video/audi.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <a href="allcars.html" class="details-btn">Back to List</a>
+           
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Group 2 Garage</h3>
+                <p>Reliable rides, honest deals, and excellent service.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="category.html">List</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Group 2 Garage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function swapImage(imgElement) {
+            document.getElementById('mainImage').src = imgElement.src;
+        }
+    </script>
+</body>
+</html>

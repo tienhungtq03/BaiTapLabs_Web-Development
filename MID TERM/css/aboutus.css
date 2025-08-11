@@ -1,0 +1,78 @@
+main {
+    padding-top: 100px; /* adjust based on actual header height */
+}
+
+/* Extra styles for About page */
+.about-container {
+    padding-top: 100px; /* prevent header overlap */
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+.about-intro {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.about-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.about-story {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+.about-photo img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.about-mission {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.about-gallery {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,60 @@
+/* CSS for msgform.htm */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey; /* Thêm màu nền cho body */
+}
+
+.center {
+    text-align: center;
+}
+
+h1.center {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+form#msgform {
+    width: 300px; /* Chiều rộng cố định cho form */
+    margin: 20px auto; /* Căn giữa form */
+    padding: 20px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+form#msgform p {
+    margin-bottom: 10px;
+    display: flex; /* Sử dụng flexbox để căn chỉnh nhãn và input */
+    align-items: center;
+}
+
+form#msgform label {
+    flex: 0 0 100px; /* Chiều rộng cố định cho nhãn */
+    text-align: right;
+    margin-right: 10px;
+}
+
+form#msgform input[type="text"] {
+    flex: 1; /* Input chiếm phần còn lại của không gian */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form#msgform input[type="submit"] {
+    display: block; /* Đặt nút submit trên một dòng riêng */
+    margin: 10px auto 0; /* Căn giữa nút submit */
+    padding: 8px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+form#msgform input[type="submit"]:hover {
+    background-color: darkblue;
+}
