@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherry Pop - MéLi’s Dessert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MéLi’s Dessert</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="cart.html" class="cart-link">
+            <img src="image/cart.png" alt="Cart" class="cart-icon">
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <!-- Hình ảnh bánh -->
+    <div class="product-image">
+      <img src="https://images.prismic.io/lf-web/Zswna0aF0TcGJYh9_Cherry-Pop-1.png?auto=format%2Ccompress&width=960&height=960&q=80&fit=max&w=1080" alt="Cherry Pop">
+    </div>
+
+    <!-- Thông tin bánh -->
+    <div class="product-info">
+      <h4>BÁNH SINH NHẬT</h4>
+      <h1>Cherry Pop</h1>
+      <div class="price">665.000 ₫</div>
+
+      <div class="quantity">
+        <button class="minus">-</button>
+        <input type="number" value="1" min="1" id="quantity">
+        <button class="plus">+</button>
+      </div>
+      <button class="btn btn-primary add-to-cart" 
+        data-name="Cherry Pop" 
+        data-price="6655000" 
+        data-image="https://images.prismic.io/lf-web/Zswna0aF0TcGJYh9_Cherry-Pop-1.png">
+  Add to Cart
+</button>
+
+
+      <h3>Sô-cô-la, Dâu rừng & Vani</h3>
+      <p>
+        Một chiếc bánh mang lại cảm giác đậm đà bởi lớp mousse được làm từ sô-cô-la đen nguyên chất, kết hợp hài hoà với lớp kem ngậy từ vani Madagascar. Điều khiến cho chiếc bánh trở nên bùng nổ chính là lớp mứt dâu rừng nấu chậm, khi ăn cả 5 lớp của chiếc bánh bạn sẽ cảm nhận được sự ngọt ngào, trầm ấm của sô-cô-la nhưng bất ngờ bởi hương vị mọng nước của những trái dâu rừng.
+      </p>
+      <p>
+Được tạo hình quả Cherry đỏ mọng có gắn một chiếc nơ đáng yêu đầy tươi mới, Cherry Pop sẽ là một món quà siêu ngọt ngào đó 🍒      
+      </p>
+
+      <!-- Cảm giác bánh -->
+      <div class="tags">
+        <span>Bùng nổ</span>
+        <span>Mọng nước</span>
+        <span>Đậm đà</span>
+      </div>
+
+      <!-- Cấu trúc bánh -->
+      <h3>Cấu trúc vị bánh</h3>
+      <ul class="layers">
+        <li><b>Lớp 01:</b> Phủ tráng gương bóng</li>
+        <li><b>Lớp 02:</b> Kem mousse sô-cô-la đen</li>
+        <li><b>Lớp 03:</b> Bạt bánh sô-cô-la đen mềm</li>
+        <li><b>Lớp 04:</b> Mứt dâu rừng nấu chậm</li>
+        <li><b>Lớp 05:</b> Kem ngậy vani Madagascar</li>
+      </ul>
+    </div>
+    </main>
+
+  <!-- Footer -->
+    <footer class="footer fade-in">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>MéLi’s Dessert</h3>
+          <p>Handmade cakes.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MéLi’s Dessert. All rights reserved.</p>
+      </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - MéLi’s Dessert</title>
+  <link rel="stylesheet" href="css/landing.css"> 
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MéLi’s Dessert</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="cart.html" class="cart-link">
+            <img src="image/cart.png" alt="Cart" class="cart-icon">
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cart Page -->
+  <main class="cart-container">
+    <h1>Your Shopping Cart</h1>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Items will be injected here -->
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <h2 id="total">Total: $0.00</h2>
+      <a href="delivery.html" class="checkout-btn">Enter Your Informations</a>
+    </div>
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>MéLi’s Dessert</h3>
+          <p>Handmade cakes.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MéLi’s Dessert. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

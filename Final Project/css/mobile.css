@@ -1,0 +1,197 @@
+/* =========================
+   Mobile Stylesheet
+   ========================= */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  /* ====== Header & Navbar ====== */
+  .header,
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar ul li {
+    margin: 0;
+  }
+
+  /* ====== Hero Sections ====== */
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-btn,
+  .hero-content .btn {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  /* ====== Grids (featured, products, bestsellers, etc.) ====== */
+  .slider,
+  .bestsellers-grid,
+  .product-grid {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .featured-cake,
+  .product-card,
+  .bestseller-card {
+    min-width: 100%;
+  }
+
+  /* ====== Offer & CTA ====== */
+  .offer-section,
+  .cta-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+  }
+
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+
+  /* ====== About Page ====== */
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .about-image img {
+    max-width: 90%;
+  }
+
+  /* ====== Testimonials ====== */
+  .testimonials {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* ====== Cart Page ====== */
+  .cart-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  #cart-table th,
+  #cart-table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .qty-btn {
+    padding: 4px 8px;
+    margin: 0 3px;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* ====== Checkout Page ====== */
+  main {
+    flex-direction: column;
+    margin: 40px auto;
+    gap: 20px;
+  }
+
+  .form-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .image-side {
+    order: -1;
+  }
+
+  .image-side img {
+    max-width: 100%;
+  }
+
+  /* ====== Menu Page ====== */
+  .menu {
+    padding: 30px 15px;
+  }
+
+  .menu h1 {
+    font-size: 1.8rem;
+  }
+
+  .menu h2 {
+    font-size: 1.3rem;
+  }
+
+  /* ====== Product Page ====== */
+  .product-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .product-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .quantity {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .quantity input {
+    width: 50px;
+  }
+
+  /* ====== Footer ====== */
+  .footer,
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .menu h1,
+  .cake-month-page h1 {
+    font-size: 1.5rem;
+  }
+}

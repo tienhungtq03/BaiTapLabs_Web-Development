@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Grace - MéLi’s Dessert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MéLi’s Dessert</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="cart.html" class="cart-link">
+            <img src="image/cart.png" alt="Cart" class="cart-icon">
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <!-- Hình ảnh bánh -->
+    <div class="product-image">
+      <img src="https://images.prismic.io/lf-web/ZqcF9x5LeNNTxjJs_ALittleGrace1.png?auto=format%2Ccompress&width=960&height=960&q=80&fit=max&w=1080" alt="A Little Grace">
+    </div>
+
+    <!-- Thông tin bánh -->
+    <div class="product-info">
+      <h4>BÁNH SINH NHẬT</h4>
+      <h1>A Little Grace</h1>
+      <div class="price">675.000 ₫</div>
+
+      <div class="quantity">
+        <button class="minus">-</button>
+        <input type="number" value="1" min="1" id="quantity">
+        <button class="plus">+</button>
+      </div>
+      <button class="btn btn-primary add-to-cart" 
+        data-name="Little Grace" 
+        data-price="675000" 
+        data-image="https://images.prismic.io/lf-web/ZqcF9x5LeNNTxjJs_ALittleGrace1.png">
+  Add to Cart
+</button>
+
+
+      <h3>Vani & Sô-cô-la</h3>
+      <p>
+        Đậm đà vị trà Earl Grey trong lớp kem mousse, cùng sự tươi mới của mứt cam ruột đỏ được nấu chậm và chút ngọt ngào của lớp crémeux làm từ sô-cô-la đen, A Little Grace được trang trí với tone màu trắng và một chiếc nơ làm thủ công từ sô-cô-la mang lại vẻ ngoài nhẹ nhàng và tao nhã.
+      </p>
+      <p>
+Nếu bạn tìm kiếm một chiếc bánh tối giản nhưng vẫn có chút đáng yêu thì A Little Grace là lựa chọn phù hợp.      
+      </p>
+
+      <!-- Cảm giác bánh -->
+      <div class="tags">
+        <span>Đậm vị trà</span>
+        <span>Tươi mới</span>
+        <span>Ngọt dịu</span>
+      </div>
+
+      <!-- Cấu trúc bánh -->
+      <h3>Cấu trúc vị bánh</h3>
+      <ul class="layers">
+        <li><b>Lớp 01:</b> Phủ tráng gương bóng</li>
+        <li><b>Lớp 02:</b> Kem mousse trà Earlgrey</li>
+        <li><b>Lớp 03:</b> Bạt bánh trà Earlgrey mềm</li>
+        <li><b>Lớp 04:</b> Mứt cam ruột đỏ nấu chậm</li>
+        <li><b>Lớp 05:</b> Kem ngậy sô-cô-la đen</li>
+        <li><b>Lớp 06:</b> Bạt bánh trà Earlgrey mềm</li>
+      </ul>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>MéLi’s Dessert</h3>
+          <p>Handmade cakes.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MéLi’s Dessert. All rights reserved.</p>
+      </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

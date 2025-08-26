@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Garden - MéLi’s Dessert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MéLi’s Dessert</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="cart.html" class="cart-link">
+            <img src="image/cart.png" alt="Cart" class="cart-icon">
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <!-- Hình ảnh bánh -->
+    <div class="product-image">
+      <img src="https://images.prismic.io/lf-web/Zsqyr0aF0TcGJYDk_Thiep-Bday-cake-1.png?auto=format%2Ccompress&width=960&height=960&q=80&fit=max&w=1080" alt="Thiệp Birthday Cake">
+    </div>
+
+    <!-- Thông tin bánh -->
+    <div class="product-info">
+      <h4>PHỤ KIỆN BÁNH</h4>
+      <h1>Thiệp Birthday Cake</h1>
+      <div class="price">12.000 ₫</div>
+
+      <div class="quantity">
+        <button class="minus">-</button>
+        <input type="number" value="1" min="1" id="quantity">
+        <button class="plus">+</button>
+      </div>
+      <button class="btn btn-primary add-to-cart" 
+        data-name="Thiệp Birthday Cake" 
+        data-price="12000" 
+        data-image="https://images.prismic.io/lf-web/Zsqyr0aF0TcGJYDk_Thiep-Bday-cake-1.png">
+  Add to Cart
+</button>
+
+
+      <h3>Kích thước A6</h3>
+      <p>
+Để những lời thương yêu được gửi đi.
+      </p>
+      <p>
+       Không chỉ đơn thuần là tặng một chiếc bánh, LaFuong hiểu rằng mỗi món quà trao đi sẽ luôn đi cùng với những thông điệp quan trọng. Nếu bạn muốn gửi thiệp kèm bánh và không tiện tự viết tay, LaFuong sẽ giúp bạn in những điều bạn muốn gửi gắm lên thiệp hoàn toàn miễn phí.
+      </p>
+      <p>
+P/s: Điền nội dung bạn muốn in lên thiệp ở phần giỏ hàng nhé!      
+      </p>
+
+  </div>
+  </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>MéLi’s Dessert</h3>
+          <p>Handmade cakes.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MéLi’s Dessert. All rights reserved.</p>
+      </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

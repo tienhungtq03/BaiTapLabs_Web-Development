@@ -1,0 +1,90 @@
+/* Product Page Layout */
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 60px 40px;
+  background: #fffaf8;
+  align-items: flex-start;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.product-info h1 {
+  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-info .category {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin: 15px 0;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.quantity button {
+  padding: 8px 12px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.quantity input {
+  width: 60px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.add-to-cart {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+
+.tags span {
+  display: inline-block;
+  border: 1px solid #ff6b6b;
+  border-radius: 25px;
+  padding: 6px 14px;
+  margin: 6px 6px 6px 0;
+  font-size: 0.85rem;
+  color: #ff6b6b;
+  background: #fff;
+}
+
+.layers {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.layers li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #444;
+}

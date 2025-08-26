@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Infinity - MéLi’s Dessert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MéLi’s Dessert</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="cart.html" class="cart-link">
+            <img src="image/cart.png" alt="Cart" class="cart-icon">
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <!-- Hình ảnh bánh -->
+    <div class="product-image">
+      <img src="https://images.prismic.io/lf-web/aC3wcCdWJ-7kSZ5g_Beyond-Infinity-01.png?auto=format%2Ccompress&width=960&height=960&q=80&fit=max&w=1080" alt="Beyond Infinity">
+    </div>
+
+    <!-- Thông tin bánh -->
+    <div class="product-info">
+      <h4>BÁNH SINH NHẬT</h4>
+      <h1>Beyond Infinity</h1>
+      <div class="price">675.000 ₫</div>
+
+      <div class="quantity">
+        <button class="minus">-</button>
+        <input type="number" value="1" min="1" id="quantity">
+        <button class="plus">+</button>
+      </div>
+      <button class="btn btn-primary add-to-cart" 
+        data-name="Beyond Infinity" 
+        data-price="675000" 
+        data-image="https://images.prismic.io/lf-web/aC3wcCdWJ-7kSZ5g_Beyond-Infinity-01.png">
+  Add to Cart
+</button>
+
+
+      <h3>Vani & Sô-cô-la</h3>
+      <p>
+        Bộ sưu tập Pretty Little Baby – Bánh cho Em Bé Iu 🧸 LaFuong tạo nên Beyond Infinity như là một món quà đầu đời Ba Mẹ cùng bé lưu lại khoảnh khắc mà con bắt đầu tưởng tượng và mơ mộng về thế giới riêng của mình. Dành cho những cậu bé muốn làm phi hành gia bay đến tận cùng dải ngân hà 👨🏼‍🚀 ☁️
+      </p>
+      <p>
+Với vị bánh cũng hoàn toàn mới được LaFuong nghiên cứu đặc biệt để khiến cho các bé cực hào hứng: Kem mousse vani Madagascar nguyên chất, kết hợp với lớp kem ngậy sô-cô-la và bạt bánh sô-cô-la xốp mềm.      
+      </p>
+
+      <!-- Cảm giác bánh -->
+      <div class="tags">
+        <span>Thơm ngậy</span>
+        <span>Đậm đà</span>
+        <span>Ngọt dịu</span>
+      </div>
+
+      <!-- Cấu trúc bánh -->
+      <h3>Cấu trúc vị bánh</h3>
+      <ul class="layers">
+        <li><b>Lớp 01:</b> Phun phủ bơ cacao</li>
+        <li><b>Lớp 02:</b> Kem mousse vani Madagascar</li>
+        <li><b>Lớp 03:</b> Bạt bánh sô-cô-la mềm</li>
+        <li><b>Lớp 04:</b> Kem ngậy sô-cô-la</li>
+        <li><b>Lớp 05:</b> Kem mousse vani Madagascar</li>
+        <li><b>Lớp 06:</b> Bạt bánh sô-cô-la đen</li>
+      </ul>
+    </div>
+    </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>MéLi’s Dessert</h3>
+          <p>Handmade cakes.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MéLi’s Dessert. All rights reserved.</p>
+      </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
